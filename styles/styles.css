@@ -1,0 +1,334 @@
+:root{
+    --col-2-: #000504;
+    --col-1-: #fdfdfd;
+    --col-3-: #f4f4f4;
+    --col-4-: #808080;
+    --col-5-: #22d2d2;
+    --col-6-: #c020c3;
+
+    --font-1-: 'Roboto', sans-serif;
+    --font-2-: 'Audiowide', sans-serif;
+}
+
+
+
+body{
+    margin: 0;
+    overflow: hidden;
+    background-color: var(--col-2-);
+}
+header{
+    position: absolute;
+    height: 100px;
+    width: 100vw;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-color: var(--col-2-);
+    z-index: 4;
+}
+nav{
+    position: absolute;
+    right: 25vw;
+    height: 100px;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    width: 0;
+    z-index: -4;
+    border-radius: 1vw;
+    background-color: var(--col-2-);
+}
+header a{
+    font-size: 20px;
+    font-family: var(--font-2-);
+    font-weight: bold;
+    padding: 10px 15px;
+    margin: 0;
+    text-decoration: none;
+    color: var(--col-1-);
+}
+header a:hover{
+    border-bottom: solid var(--col-1-) 1px;
+}
+header button{
+    height: 100px;
+    width: 80px;
+    display: grid;
+    place-items: center;
+    margin: 0 5vw;
+    background-color: var(--col-2-);
+    border-radius: 1vw;
+    border: none;
+    z-index: 4;
+}
+#parallax{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    perspective: 100px;
+    scroll-behavior: smooth;
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    transform-style: preserve-3d;
+}
+h1{
+    font-size: 120px;
+    font-family: var(--font-1-);
+    font-weight: 700;
+    margin: 0;
+}
+h2{
+    font-size: 84px;
+    font-family: var(--font-1-);
+    font-weight: bold;
+    margin: 0;
+}
+h3{
+    font-size: 64px;
+    font-family: var(--font-1-);
+    font-weight: bold;
+    margin: 0;
+}
+h4{
+    font-size: 40px;
+    font-family: var(--font-1-);
+    font-weight: bold;
+    margin: 0;
+}
+h5{
+    font-size: 30px;
+    font-family: var(--font-1-);
+    font-weight: bold;
+    margin: 0;
+}
+p{
+    font-size: 24px;
+    font-family: var(--font-1-);
+    font-weight: bold;
+    margin: 0;
+}
+.colorFull{
+    background: linear-gradient(90deg, var(--col-5-) 0%, var(--col-6-) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    pointer-events: none;
+}
+.button1{
+    height: auto;
+    width: auto;
+    border: solid var(--col-2-) 1px;
+    background-color: transparent;
+}
+.button1 p{
+    font-size: 20px;
+    font-family: var(--font-2-);
+    padding: 10px 15px;
+    color: var(--col-2-);
+}
+.button1:hover{
+    border: solid var(--col-2-) 1px;
+    background-color: var(--col-2-);
+}
+.button1:hover p{
+    color: var(--col-1-);
+}
+.button2{
+    height: auto;
+    width: auto;
+    border: solid var(--col-5-) 1px;
+    background-color: transparent;
+}
+.button2 p{
+    font-size: 20px;
+    font-family: var(--font-2-);
+    padding: 10px 15px;
+    color: var(--col-5-);
+}
+.button2:hover{
+    border: solid var(--col-5-) 1px;
+    background-color: var(--col-5-);
+}
+.button2:hover p{
+    color: var(--col-1-);
+}
+.groupUp{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+#hero{
+    height: 105vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--col-1-);
+}
+#hero h1{
+    position: absolute;
+    font-size: 750px;
+    
+}
+#hero article{
+    height: auto;
+    width: 90vw;
+    padding: 10px 0;
+    margin-bottom: -180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background-color: var(--col-2-);
+}
+#hero article h4{
+    padding: 15px;
+    z-index: 2;
+}
+
+
+
+
+footer{
+    position: relative;
+    height: auto;
+    width: 100vw;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5vw;
+    color: var(--col-1-);
+}
+footer aside{
+    height: auto;
+    width: 20vw;
+    margin: 15vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+footer article{
+    position: absolute;
+    bottom: 0;
+    left: 15vw;
+    height: 100px;
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+footer article a{
+    padding: 10px 30px;
+    font-size: 20px;
+    font-family: var(--font-1-);
+    font-weight: bold;
+    margin: 0;
+    color: var(--col-4-);
+}
+footer a{
+    padding: 10px 15px;
+    font-size: 24px;
+    font-family: var(--font-1-);
+    font-weight: bold;
+    margin: 0;
+    color: var(--col-1-);
+    text-decoration: none;
+}
+footer a:hover{
+    color: var(--col-5-);
+}
+footer p{
+    padding: 10px 30px;
+    font-size: 24px;
+    font-family: var(--font-1-);
+    font-weight: bold;
+    margin: 0;
+    color: var(--col-4-);
+}
+
+@media (max-width: 1024px){
+    header{
+        height: 0px;
+    }
+    nav{
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #hero h1{
+        position: absolute;
+        font-size: 73vw;
+    }
+    #hero article{
+        padding: 1vw 0;
+        margin-bottom: -17.5vw;
+    }
+    #hero h4{
+        font-size: 3.9vw;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 200px;
+    }
+    footer aside{
+        height: auto;
+        width: 60vw;
+        margin: 5vh 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    footer article{
+        height: 200px;
+        left: 20vw;
+        width: 60vw;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px){
+    .groupUp{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 120px;
+    }
+    h2{
+        font-size: 70px;
+    }
+    h3{
+        font-size: 34px;
+    }
+    h4{
+        font-size: 29px;
+    }
+    p{
+        font-size: 24px;
+    }
+}

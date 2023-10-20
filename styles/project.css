@@ -1,0 +1,233 @@
+
+
+
+
+
+
+
+
+#story{
+    position: relative;
+    height: auto;
+    padding: 20vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#story::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100vw;
+    box-shadow: 0px 0px 15px 15px var(--col-2-);
+}
+#story::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 100vw;
+    box-shadow: 0px 0px 15px 15px var(--col-1-);
+}
+#story img{
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(50%) opacity(50%);
+    z-index: -2;
+}
+#story article{
+    height: auto;
+    width: 70vw;
+    max-width: 800px;
+    margin: 10vh 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2vw;
+    z-index: 3;
+    color: var(--col-1-);
+}
+#story h2{
+    font-family: var(--font-2-);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 500ms ease-in-out;
+}
+#story:hover h2{
+    opacity: 1;
+}
+#story h5{
+    margin-left: 10vw;
+}
+#assets{
+    position: relative;
+    height: auto;
+    padding: 40vh 0 20vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10vh;
+    color: var(--col-2-);
+    background: var(--col-1-);
+}
+#assets article{
+    height: auto;
+    width: 90vw;
+    display: grid;
+    place-items: center;
+}
+#assets aside{
+    position: relative;
+    height: auto;
+    width: 70vw;
+    margin: 0 10vw;
+    padding: 3vh 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3vh;
+}
+#assets aside::before{
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 54px;
+    width: 0px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--col-5-) 0%, var(--col-6-) 100%);
+    z-index: -2;
+    transition: all 500ms ease;
+}
+#assets aside:hover::before{
+    right: 0;
+    width: 10vw;
+}
+#assets aside h4{
+    font-family: var(--font-2-);
+    font-weight: 100;
+}
+#assets aside p{
+    width: 40vw;
+    font-size: 20px;
+    color: var(--col-4-);
+}
+#assets aside i{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 80%;
+    width: 10vw;
+    display: grid;
+    place-items: center;
+}
+#fokus{
+    height: auto;
+    padding: 40vh 0 20vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10vh;
+    color: var(--col-1-);
+    background-color: var(--col-2-);
+    background: radial-gradient(circle at 70% 70%, var(--col-6-) 1%, transparent 15%), radial-gradient(circle at 30% 30%, var(--col-5-) 1%, transparent 15%);
+}
+#fokus::before{
+    content: "";
+    position: absolute;
+    top: -200px;
+    left: 20vw;
+    height: 500px;
+    width: 100px;
+    background: #000504 url(/images/backsplit1.PNG) center center/cover no-repeat;
+    rotate: 90deg;
+}
+#fokus article{
+    height: auto;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#fokus aside{
+    height: 40vh;
+    width: 22vw;
+    max-width: 600px;
+    padding: 0 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 3vw;
+}
+#fokus aside p{
+    color: var(--col-4-);
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px){
+    #story h2{
+        opacity: 1;
+    }
+    #fokus article{
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10vh;
+    }
+    #fokus aside{
+        height: auto;
+        width: 70vw;
+    }
+}
+@media (max-width: 768px){
+    #story article{
+        width: 90vw;
+        margin: 0;
+    }
+    #story h2{
+        font-size: 55px;
+    } 
+    #story h5{
+        margin: 0;
+    }
+}
+@media (max-width: 480px){}
+
+
+
+
+
+
+
+
+
+
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+

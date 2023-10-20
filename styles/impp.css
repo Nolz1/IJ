@@ -1,0 +1,30 @@
+h5{
+    color: var(--col-2-);
+    margin: 10vh 0 3vh 0;
+    font-weight: 300;
+}
+p{
+    color: var(--col-2-);
+    font-size: 20px;
+    margin-bottom: 8vh;
+    font-weight: 300;
+}
+#hero{
+    background-color: var(--col-1-);
+    color: var(--col-2-);
+}
+#hero article{
+    background-color: var(--col-1-);
+}
+#imprint{
+    height: auto;
+    width: 80vw;
+    padding: 10vh 10vw;
+    background-color: var(--col-1-);
+}
+#pp{
+    height: auto;
+    width: 80vw;
+    padding: 10vh 10vw;
+    background-color: var(--col-1-);
+}
