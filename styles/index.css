@@ -97,6 +97,7 @@
     width: 100px;
     background: #000504 url(/images/backsplit1.PNG) center center/cover no-repeat;
     rotate: 90deg;
+    z-index: 4;
 }
 #services::after{
     content: "";
