@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="s/s.css">
+    <link rel="stylesheet" href="s/icons.css">
+    <link rel="stylesheet" href="s/fonts/fonts.css">
+</head>
+<body>
+    <header>
+        <img src="s/images/home.logo.png" alt="logo">
+        <a href="index.html"><i class="material-symbols-outlined" style="font-size: 50px;">menu</i></a>
+    </header>
+    <main id="hero">
+        <img src="s/images/a-j-nbck.png" alt="background">
+        <article>
+            <h2>Premium equipment f&uumlr den Schnee</h2>
+            <h4>Dein regionaler Ausstatter f&uumlr Skiausr&uumlstung und Zugeh&oumlr. <br> 
+                Wir bringen alle top Marken der Ski-welt in deine Region. <br>
+                Bei uns kannst du alle Produkte anprobieren, anschauen und vergleichen. <br>
+                Wir verkaufen nur vor ort.
+            </h4>
+            <a href="">Anfahrt planen</a>
+        </article>
+    </main>
+    <main id="marken">
+        <article>
+            <img src="s/images/logo1.png" alt="logo">
+            <img src="s/images/logo2.png" alt="logo">
+            <img src="s/images/logo3.png" alt="logo">
+            <img src="s/images/logo4.png" alt="logo">
+            <img src="s/images/logo5.png" alt="logo">
+        </article>
+    </main>
+    <main id="prod">
+        <section>
+            <button id="itemBut1" onclick="changeItem(0)" class="active">Skier</button>
+            <button id="itemBut2" onclick="changeItem(1)">Skist&oumlcke</button>
+            <button id="itemBut3" onclick="changeItem(2)">Skischuhe</button>
+            <button id="itemBut4" onclick="changeItem(3)">Skihandschuhe</button>
+            <button id="itemBut5" onclick="changeItem(4)">Snowboards</button>
+            <button id="itemBut6" onclick="changeItem(5)">Snowboardschuhe</button>
+            <button id="itemBut7" onclick="changeItem(6)">Snowboardhandschuhe</button>
+            <button id="itemBut8" onclick="changeItem(7)">Helme</button>
+            <button id="itemBut9" onclick="changeItem(8)">Brillen</button>
+            <button id="itemBut10" onclick="changeItem(9)">Jacken</button>
+            <button id="itemBut11" onclick="changeItem(10)">Hosen</button>
+        </section>
+
+        <article id="skiers" class="active">
+            <h3>Skier</h3>
+            <h5>Entdecke unsere breite Auswahl an Skier, darunter High-Performance-Modelle von GlacialGlide Performance und SnowSculpt Gearworks für anspruchsvolle Pisten sowie stylishe Freestyle-Optionen von FrostPeak Gear snow.</h5>
+            <div>
+                <img src="s/images/pp-ski.jpg" alt="">
+            </div>
+        </article>
+        <article id="sticks">
+            <h3>Skist&oumlcke</h3>
+            <h5>Verbessere deine Stabilität mit Skistöcken von BlizzardBound Essentials und SnowSculpt Gearworks, die für ihre leichte Bauweise und optimale Griffigkeit bekannt sind.</h5>
+            <div>
+                <img src="s/images/pp-sick.jpg" alt="">
+            </div>
+        </article>
+        <article id="boots1">
+            <h3>Skischuhe</h3>
+            <h5>Erlebe Komfort und Performance mit Skischuhen von SummitStyle Provisions und GlacialGlide Performance, die für ihre präzise Passform und innovative Technologie geschätzt werden.</h5>
+            <div>
+                <img src="s/images/pp-ski-boots.jpg" alt="">
+            </div>
+        </article>
+        <article id="hands1">
+            <h3>Skihandschuhe</h3>
+            <h5>Halte deine Hände warm und geschützt mit hochwertigen Skihandschuhen von FrostPeak Gear snow und GlacialGlide Performance – perfekt für jedes Wetter und Gelände.</h5>
+            <div>
+                <img src="s/images/pp-hand-ski.jpg" alt="">
+            </div>
+        </article>
+
+        <article id="boards">
+            <h3>Snowboards</h3>
+            <h5>Stürze dich in den Pulverschnee mit unseren Snowboards von SnowSculpt Gearworks und GlacialGlide Performance – entwickelt für ultimative Kontrolle und unvergleichliche Leistung.</h5>
+            <div>
+                <img src="s/images/pp-boards.jpg" alt="">
+            </div>
+        </article>
+        <article id="boots2">
+            <h3>Snowboardschuhe</h3>
+            <h5>Fahre mit Style und Komfort – unsere Snowboardschuhe von FrostPeak Gear snow und BlizzardBound Essentials bieten maximale Performance und bequemen Sitz.</h5>
+            <div>
+                <img src="s/images/pp-boots.jpg" alt="">
+            </div>
+        </article>
+        <article id="hands2">
+            <h3>Snowboardhandschuhe</h3>
+            <h5>Schütze deine Hände vor Kälte und Nässe mit hochwertigen Snowboardhandschuhen von GlacialGlide Performance und FrostPeak Gear snow – perfekt für lange Tage auf der Piste.</h5>
+            <div>
+                <img src="s/images/pp-hand-snow.jpg" alt="">
+            </div>
+        </article>
+    
+        <article id="helmet">
+            <h3>Helme</h3>
+            <h5>Sicherheit steht an erster Stelle – vertraue auf Helme von AlpineFlex Outfitters, GlacialGlide Performance und SummitStyle Provisions, die höchsten Schutz und Tragekomfort bieten.</h5>
+            <div>
+                <img src="s/images/pp-hel.jpg" alt="">
+            </div>
+        </article>
+        <article id="glases">
+            <h3>Brillen</h3>
+            <h5>Verbessere deine Sicht mit Skibrillen von BlizzardBound Essentials und FrostPeak Gear snow – entwickelt für klare Sichtverhältnisse bei unterschiedlichsten Wetterbedingungen.</h5>
+            <div>
+                <img src="s/images/pp-glas.jpg" alt="">
+            </div>
+        </article>
+        <article id="jacket">
+            <h3>Jacken</h3>
+            <h5>Stilvoll und funktional: Unsere Skijacken von GlacialGlide Performance und BlizzardBound Essentials bieten nicht nur Schutz vor Kälte, sondern auch einen trendigen Look auf der Piste.</h5>
+            <div>
+                <img src="s/images/pp-jacket.jpg" alt="">
+            </div>
+        </article>
+        <article id="bottom">
+            <h3>Hosen</h3>
+            <h5>Setze auf Bequemlichkeit und Funktionalität mit Skihosen von SummitStyle Provisions und SnowSculpt Gearworks – entwickelt für maximale Bewegungsfreiheit und Schutz vor den Elementen.</h5>
+            <div>
+                <img src="s/images/pp-trou.jpg" alt="">
+            </div>
+        </article>
+    </main>
+    <main id="service">
+        <h2>Services</h2>
+        <h5>Unsere Services umfassen eine individuelle Beratung, bei der wir auf deine Bedürfnisse und Vorlieben eingehen, um sicherzustellen, dass du die perfekte Ausrüstung für dein Können und deine Ziele findest. Zudem bieten wir professionelle Anpassungen, damit deine Skischuhe perfekt sitzen und deine Bindungen optimal eingestellt sind. </h5>
+
+        <h5>Unsere Werkstatt steht bereit, um deine Ski und Snowboards zu warten, zu reparieren oder zu tunen. Wir verstehen, dass deine Ausrüstung eine Investition ist, und wir sind hier, um sicherzustellen, dass sie immer in Bestform ist. </h5>     
+        <div>
+            <img src="s/images/ski-store.png" alt="background">
+        </div>
+    </main>
+    <main id="anf">
+        <img src="s/images/SCR-20231201-lvle.jpeg" alt="background">
+        <h3>Plane deine Anfahrt oder schaue nach Stores in deiner N&aumlhe &uumlber</h3>
+        <a href="">Google Maps</a>
+    </main>
+    <main id="facts">
+            <img id="factsimg1" src="s/images/a-j-nbck2.png" alt="image">
+            <img id="factsimg2" src="s/images/a-j-nbck.png" alt="image">
+        <article>
+            <aside>
+                <h6>&uumlber</h6>
+                <h4>400</h4>
+                <h6>zufriedene Kunden</h6>
+            </aside>
+            <aside>
+                <h4>7</h4>
+                <h6>Marken zum mitnehmen</h6>
+            </aside>
+            <aside>
+                <h6>&uumlber</h6>
+                <h4>650</h4>
+                <h6>ferf&uumlgbare Produkte</h6>
+            </aside>
+            <aside>
+                <h4>24/7</h4>
+                <h6>f&uumlr dich erreichbar</h6>
+            </aside>
+        </article>
+    </main>
+    <footer>
+        <aside>
+            <h3>Alles was du f&uumlr den perfekten Winter brauchst, gibt's bei uns.</h3>
+        </aside>
+        <aside>
+            <h5>Produkte</h5>
+            <h5>Services</h5>
+            <h5>Anfahrt</h5>
+        </aside>
+        <aside>
+            <h4>Marken</h4>
+            <h5>FrostPeak Gear</h5>
+            <h5>AlpineFlex Outfitters</h5>
+            <h5>GlacialGlide Performance</h5>
+            <h5>SnowSculpt Gearworks</h5>
+            <h5>BlizzardBound Essentials</h5>
+            <h5>SummitStyle Provisions</h5>
+        </aside>
+    </footer>
+</body>
+<script src="s/s.js"></script>
+</html>

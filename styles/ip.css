@@ -1,0 +1,38 @@
+
+
+#imprint{
+    height: auto;
+    width: 80vw;
+    padding: 10vh 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+#imprint h5{
+    font-weight: 500;
+    margin-top: 5vh;
+    color: var(--col-2-);
+}
+#imprint p{
+    color: var(--col-2-);
+}
+#pp{
+    height: auto;
+    width: 80vw;
+    padding: 10vh 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+#pp h5{
+    font-weight: 500;
+    margin-top: 5vh;
+    color: var(--col-2-);
+}
+#pp p{
+    color: var(--col-2-);
+}

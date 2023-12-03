@@ -1,0 +1,110 @@
+
+#pro{
+    height: auto;
+    padding: 10vh 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5vw;
+}
+#pro aside{
+    height: 50vh;
+    width: 35vw;
+    margin: 0 0 0 10vw;
+    overflow: hidden;
+    border-radius: 0 0 0 60px;
+}
+#pro aside img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+#pro article{
+    position: relative;
+    height: auto;
+    width: 40vw;
+    padding: 5vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+}
+#pro article h2{
+    font-family: var(--font-1-);
+}
+#pro article h5{
+    color: var(--col-3-);
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 150%;
+    letter-spacing: 1px;
+}
+#pro article div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#pro article h6{
+    position: relative;
+    color: var(--col-3-);
+
+}
+#pro article h6:hover p{
+    display: flex;
+}
+#pro article h6 p{
+    position: absolute;
+    top: 150%;
+    right: 0;
+    height: auto;
+    width: 20vw;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    text-align: end;
+    color: var(--col-5-);
+}
+
+
+
+
+@media (max-width: 1024px){
+    #pro{
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    #pro aside{
+        height: 40vh;
+        width: 60vw;
+        margin: 0;
+        border-radius: 0;
+    }
+    #pro article{
+        height: auto;
+        width: 80vw;
+        padding: 5vh 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 30px;
+    }
+}
+@media (max-width: 768px){
+    #pro aside{
+        height: 50vh;
+        width: 80vw;
+        margin: 0;
+        border-radius: 0;
+    }
+}
+@media (max-width: 480px){}

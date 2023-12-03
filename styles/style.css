@@ -1,0 +1,418 @@
+
+:root{
+    --col-1-: #f8f8f8;
+    --col-2-: #181818;
+    --col-3-: #676767;
+    --col-4-: #efefef;
+    --col-5-: #db3871;
+    --col-6-: #ff6a00;
+    --col-7-: #144f6f;
+
+
+
+    --font-1-: 'Expletus Sans', sans-serif;
+    --font-2-:  'Roboto', sans-serif;
+}
+
+
+
+
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--col-1-);
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+h1{
+    font-size: 300px;
+    font-family: var(--font-2-);
+    font-weight: 900;
+    margin: 0;
+    text-decoration: none;
+     color: var(--col-2-);
+}
+h2{
+    font-size: 80px;
+    font-family: var(--font-2-);
+    font-weight: bold;
+    margin: 0;
+    text-decoration: none;
+     color: var(--col-2-);
+}
+h3{
+    font-size: 40px;
+    font-family: var(--font-2-);
+    font-weight: 500;
+    margin: 0;
+    text-decoration: none;
+     color: var(--col-2-);
+}
+h4{
+    font-size: 26px;
+    font-family: var(--font-2-);
+    font-weight: 500;
+    margin: 0;
+    text-decoration: none;
+     color: var(--col-2-);
+}
+h5{
+    font-size: 20px;
+    font-family: var(--font-2-);
+    font-weight: 300;
+    margin: 0;
+    text-decoration: none;
+    color: var(--col-3-);
+    line-height: 150%;
+    letter-spacing: 1px;
+}
+h6{
+    font-size: 18px;
+    font-family: var(--font-2-);
+    font-weight: 300;
+    margin: 0;
+    text-decoration: none;
+     color: var(--col-2-);
+}
+p{
+    font-size: 18px;
+    font-family: var(--font-2-);
+    font-weight: 300;
+    margin: 0;
+    text-decoration: none;
+     color: var(--col-2-);
+     color: var(--col-3-);
+    line-height: 150%;
+    letter-spacing: 1px;
+}
+a{
+    text-decoration: none;
+    color: var(--col-2-);
+}
+
+
+.colorFull{
+    background: linear-gradient(90deg, var(--col-5-) 10%, var(--col-6-) 90%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    pointer-events: none;
+}
+.discription{
+    position: absolute;
+    top: 15vh;
+    left: 15vw;
+    padding: 0 15px;
+    border-left: solid var(--col-5-) 5px;
+}
+.discription h6{
+    font-weight: 600;
+}
+.button1{
+    height: auto;
+    width: auto;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, var(--col-6-) 10%, var(--col-5-) 90%);
+    display: grid;
+    place-items: center;
+    border: none;
+    color: var(--col-1-);
+    font-size: 20px;
+    font-family: var(--font-2-);
+    font-weight: 400;
+    margin: 0;
+    box-shadow: none;
+    transition: all 200ms ease;
+}
+.button1:hover{
+    box-shadow: 0px 10px 13px -7px var(--col-5-), 5px 5px 15px 5px rgba(0,0,0,0);
+    scale: 1.02;
+}
+.button2{
+    height: auto;
+    width: auto;
+    padding: 15px 30px;
+    background-color: var(--col-1-);
+    display: grid;
+    place-items: center;
+    border: none;
+    color: var(--col-3-);
+    font-size: 20px;
+    font-family: var(--font-2-);
+    font-weight: 400;
+    margin: 0;
+}
+.button2:hover{
+    color: var(--col-6-);
+}
+.reveal{
+    position: relative;
+    opacity: 0;
+    transform: translateY(100px);
+    pointer-events: none;
+    z-index: -2;
+    transition: all 1s ease;
+}
+.reveal.active{
+    opacity: 1;
+    transform: translateY(0px);
+    pointer-events: all;
+    z-index: 2;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 80vw;
+    padding: 0 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: var(--col-1-);
+    
+}
+header img{
+    height: 60%;
+    margin: 0;
+    padding: 0;
+}
+header nav{
+    height: 100%;
+    width: auto;
+    padding: 0 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+header a{
+    font-size: 20px;
+    font-family: var(--font-2-);
+    font-weight: 600;
+    margin: 0;
+    text-decoration: none;
+    color: var(--col-2-);
+    padding: 10px 15px;
+    z-index: 101;
+}
+header a:hover{
+    border-bottom: solid var(--col-2-) 1px;
+}
+header aside{
+    color: var(--col-2-);
+    display: none;
+}
+
+#drop-down-menue{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100vw;
+    padding: 50px 0;
+    height: 0px;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    z-index: 102;
+    background-color: var(--col-1-);
+}
+#drop-down-menue a{
+    height: 40px;
+    width: auto;
+    padding: 0 50px;
+    display: grid;
+    place-items: center;
+}
+
+
+#Homehero{
+    height: 85vh;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+}
+#Homehero img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 80;
+    filter: brightness(100%);
+}
+#Homehero h1{
+    flex: none;
+    position: absolute;
+    bottom: -140px;
+    left: 10vw;
+    color: var(--col-1-);
+    font-family: var(--font-1-);
+    filter: opacity(80%);
+    z-index: 81;
+}
+
+
+#cta{
+    height: auto;
+    padding: 20vh 0 10vh 0;
+    display: grid;
+    place-items: center;
+}
+#cta .discription{
+    border-left: solid var(--col-7-) 5px;
+}
+#cta a{
+    height: auto;
+    width: 60vw;
+    padding: 80px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    background: linear-gradient(90deg, var(--col-6-) 10%, var(--col-5-) 90%);
+}
+#cta a h2{
+    font-family: var(--font-1-);
+    color: var(--col-1-);
+}
+#cta a button{
+    height: auto;
+    width: 500px;
+    padding: 15px;
+    background-color: var(--col-1-);
+    border: none;
+    transition: all 200ms ease;
+}
+#cta a button:hover{
+    box-shadow: 0px 10px 13px -7px #ffffff, 5px 5px 15px 5px rgba(0,0,0,0);
+    scale: 1.02;
+}
+#cta a button h5{
+    font-weight: bold;
+    color: var(--col-2-);
+}
+
+
+
+footer{
+    position: relative;
+    height: auto;
+    width: 100vw;
+    padding: 15vh 0;
+    background-color: var(--col-7-);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3vw;
+}
+footer aside{
+    height: auto;
+    width: 20vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+}
+footer h3{
+    color: var(--col-1-);
+}
+footer h4{
+    color: var(--col-1-);
+}
+footer h5{
+    color: var(--col-1-);
+    font-weight: bold;
+}
+footer a{
+    font-size: 22px;
+    font-family: var(--font-2-);
+    font-weight: 300;
+    margin: 0;
+    text-decoration: none;
+    color: var(--col-1-);
+}
+footer article{
+    position: absolute;
+    bottom: 50px;
+    height: auto;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+
+
+@media (max-width: 1024px){
+    h2{
+        font-size: 70px;
+    }
+    #Homehero h1{
+        font-size: 15vw;
+        bottom: -5vw;
+    }
+    .discription{
+        left: 10vw;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10vh;
+    }
+    footer aside{
+        height: auto;
+        width: 70vw;
+    }
+}
+@media (max-width: 768px){
+    h2{
+        font-size: 60px;
+    }
+    header nav{
+        display: none;
+    }
+    header aside{
+        display: grid;
+    }
+    .discription{
+        left: 5vw;
+    }
+    #cta{
+        padding: 20vh 0 0vh 0;
+    }
+    #cta a{
+        width: 90vw;
+        padding: 5vw;
+        border-radius: 0;
+    }
+    #cta a button{
+        width: 80vw;
+    }
+}
+@media (max-width: 480px){
+    h2{
+        font-size: 50px;
+    }
+}
