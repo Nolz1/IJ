@@ -26,6 +26,9 @@ body{
     padding: 0;
     background-color: var(--col-1-);
 }
+body::-webkit-scrollbar{
+    display: none;
+}
 main{
     position: relative;
     height: 100vh;
