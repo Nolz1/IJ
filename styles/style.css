@@ -178,7 +178,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    height: 100px;
+    height: 10vh;
     width: 80vw;
     padding: 0 10vw;
     display: flex;
@@ -377,9 +377,6 @@ footer article{
     h2{
         font-size: 70px;
     }
-    header{
-        height: 150px;
-    }
     header nav{
         display: none;
     }
@@ -407,9 +404,6 @@ footer article{
 @media (max-width: 768px){
     h2{
         font-size: 60px;
-    }
-    header{
-        height: 200px;
     }
     
     .discription{
