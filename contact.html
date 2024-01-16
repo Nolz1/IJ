@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAIJAN webproject | Kontakt</title>
+    <meta name="description" content="Nimm kontakt mit uns auf.">
+    <link rel="icon" href="images/logo-white-back-icon.png">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/icons.css">
+    <link rel="stylesheet" href="styles/cookie.css">
+    <script src="javascript/work.js" defer></script>
+</head>
+<body>
+    <section id="cookieBanner">
+        <h4>Cookies</h4>
+        <p class="bsr">This website uses cookies to enable important user elements for you. Please read our <a href="">privacy and cookie policies</a> 
+            carefully to understand how we process your data and use cookies on this website. <br> 
+            By consenting, you agree to the use of cookies in accordance with our policies.</p>
+        <div>
+            <button class="button1" id="cookie-btn1"><p>Allow Cookies</p></button>
+            <button class="button1" id="cookie-btn2"><p>Only neccesary Cookies</p></button>
+        </div>
+    </section>
+    <header>
+        <nav>
+            <a id="HeadText1" href="index.html">HOME</a>
+            <a id="HeadText2" href="work.html">WORK</a>
+            <a id="HeadText3" href="contact.html" class="active">CONTACT</a>
+        </nav>
+        <div>
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <i id="headerswich" class="material-symbols-outlined" style="font-size: 50px;">menu</i>
+    </header>
+    <main id="mail">
+        <article>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis debitis aut iste vero adipisci reprehenderit ut architecto, veritatis omnis aliquid quo officiis voluptates beatae optio error cupiditate at voluptate quibusdam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae nobis quo quod eaque sapiente minima eius, hic ex veniam optio quis dolore nihil doloremque, exercitationem officiis nam rem voluptatibus sit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel nam eos vitae excepturi exercitationem, est reprehenderit culpa aperiam quisquam temporibus hic ea doloremque iusto similique eius corrupti reiciendis architecto minus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate adipisci obcaecati repellat tempore a fugiat nobis optio, aspernatur dolorum eum quae et ducimus, hic exercitationem perferendis, possimus necessitatibus blanditiis natus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, sit soluta quibusdam accusantium, provident alias incidunt nihil dicta voluptatem animi libero? Iure doloremque atque consequatur? Debitis blanditiis facilis eos tenetur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos eius rerum amet, possimus repellendus quaerat tenetur deleniti quo voluptates quis eos dolore, est deserunt assumenda dolorum tempora. Perferendis, facere voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur mollitia vero sapiente natus, architecto beatae dolor magnam illum laborum dignissimos repudiandae enim corporis temporibus voluptatem ipsam officia quaerat facilis amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates velit, impedit eaque reiciendis est praesentium mollitia nesciunt magnam ad? Labore alias, nihil expedita accusantium corporis modi recusandae commodi temporibus ea? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus eveniet sequi commodi, rerum voluptates sunt quisquam assumenda nam laudantium dolor. Eum qui magnam molestiae adipisci nam placeat quidem, saepe tenetur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, iusto alias! Earum beatae possimus nisi facere tempore doloremque iste, incidunt exercitationem quae animi eius. Quis ad quas cupiditate corrupti ullam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa corporis eaque, ut deserunt quas dolorum blanditiis et quos vero minus repellat voluptate nihil soluta sapiente laudantium! Non, eum possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sit aliquam repellat voluptates? Similique, magni eum delectus velit adipisci explicabo pariatur doloribus dolorum quos esse ipsam, qui voluptas, at sed.</p>
+        </article>
+        <form action="https://formspree.io/f/myyqvdgd" method="POST">
+            <input type="text" placeholder="name" name="Name" required oninvalid="this.setCustomValidity('Fill in your name')" oninput="setCustomValidity('')">
+            <input type="email" placeholder="E-Mail" name="email" required oninvalid="this.setCustomValidity('Fill in your e-mail')" oninput="setCustomValidity('')">
+            <textarea placeholder="content" name="Inhalt" cols="30" rows="10" required oninvalid="this.setCustomValidity('Let us know your idea')" oninput="setCustomValidity('')"></textarea>
+            <div>
+                <input type="radio" id="checkbox" name="Acceptance" required oninvalid="this.setCustomValidity('Accept our privacy policies ')" oninput="setCustomValidity('')">
+                <label for="checkbox" id="ContactText1">I have taken note of the privacy policy and agree that my details provided through the contact form may be collected and processed for the purpose of handling my request.</label>
+            </div>
+            <button type="submit" class="button1">
+                <p id="ContactText2">Send Message</p>
+                <i class="material-symbols-outlined" style="font-size: 30px;">arrow_forward</i>
+            </button>
+        </form>
+    </main>
+    <main id="contact">
+        <h2>contact</h2>
+    </main>
+    <footer>
+        <article>
+            <h6 id="FootText1">Sites</h6>
+            <a href="index.html" id="FootText2">Home</a>
+            <a href="work.html" id="FootText3">Work</a>
+            <a href="contact.html" id="FootText4">Contact</a>
+            <a href="ip.html" id="FootText8">Imprint and privacy policy</a>
+        </article>
+        <article>
+            <h6 id="FootText5">Functions</h6>
+            <a>
+                <button id="Languagecookie-btn1">
+                    <p>EN</p>
+                </button> 
+                / 
+                <button id="Languagecookie-btn2">
+                    <p>DE</p>
+                </button>
+            </a>
+            <a>
+                <i class="material-symbols-outlined" style="font-size: 25px;" id="Lightcookie-btn1">dark_mode</i>
+                <p>/</p>
+                <i class="material-symbols-outlined" style="font-size: 25px;" id="Lightcookie-btn2">light_mode</i>
+            </a>
+        </article>
+        <article>
+            <h6 id="FootText6">Connect</h6>
+            <a href="https://www.instagram.com/maijan.webproject/">Instagram</a>
+            <a href="">E-Mail</a>
+            <a href="https://medium.com/@maijan.webproject">Medium</a>
+        </article>
+        <aside>
+            <h6 id="FootText7">Elevate your online presence with our expert web design services. Your vision, our innovation.</h6>
+        </aside>
+    </footer>
+</body>
+<script src="javascript/cookie.js"></script>
+<script src="javascript/Light.js"></script>
+<script src="javascript/Language.js"></script>
+<script src="javascript/Languagec.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</html>

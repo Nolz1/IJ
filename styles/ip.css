@@ -1,0 +1,26 @@
+
+#i{
+    height: auto;
+    width: 80vw;
+    margin-top: 30vh;
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+}
+#pp{
+    height: auto;
+    width: 80vw;
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+
+    & h6{
+        margin-top: 5vh;
+    }
+}
