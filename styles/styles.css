@@ -238,8 +238,7 @@ a{
         width: 80vw;
     }
 }
-
-.reveal1{
+.reveal1, .reveal2, .reveal3, .reveal4{
     position: relative;
     opacity: 0;
     transform: translateY(100px);
@@ -254,48 +253,12 @@ a{
         z-index: 2;
     }
 }
-.reveal2{
-    position: relative;
-    opacity: 0;
-    transform: translateY(100px);
-    pointer-events: none;
-    z-index: -2;
-    transition: all 1s ease;
-
-    &.active{
+@media (max-width: 1024px){
+    .reveal1, .reveal2, .reveal3, .reveal4{
+        position: relative;
         opacity: 1;
-        transform: translateY(0px);
-        pointer-events: all;
-        z-index: 2;
-    }
-}
-.reveal3{
-    position: relative;
-    opacity: 0;
-    transform: translateY(100px);
-    pointer-events: none;
-    z-index: -2;
-    transition: all 1s ease;
-
-    &.active{
-        opacity: 1;
-        transform: translateY(0px);
-        pointer-events: all;
-        z-index: 2;
-    }
-}
-.reveal4{
-    position: relative;
-    opacity: 0;
-    transform: translateY(100px);
-    pointer-events: none;
-    z-index: -2;
-    transition: all 1s ease;
-
-    &.active{
-        opacity: 1;
-        transform: translateY(0px);
-        pointer-events: all;
+        transform: translateY(0);
+        pointer-events: none;
         z-index: 2;
     }
 }
