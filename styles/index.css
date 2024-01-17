@@ -302,10 +302,6 @@
         z-index: 3;
         opacity: 1;
         display: block;
-        filter: brightness(100%);
-        animation: vanish linear forwards;
-        animation-timeline: view();
-        animation-range: exit 100vh 0;
     }
 }
 @keyframes jump{
@@ -346,6 +342,11 @@
 }
 @keyframes vanish{
     to{opacity: 0;}
+
+        filter: brightness(100%);
+        animation: vanish linear forwards;
+        animation-timeline: view();
+        animation-range: exit 100vh 0;
 }
 #welcome{
     height: auto;
