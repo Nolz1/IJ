@@ -908,9 +908,6 @@
             & #HomeText1{
                 margin-left: 10vw;
             }
-            *{
-                color: var(--col-1-);
-            }
             & .container{
                 height: auto;
                 width: 80vw;
@@ -923,18 +920,7 @@
                 & button{
                     border: none;
                     background: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
-    
-                    & *{
-                        color: var(--col-2-);
-                    }
-                    &:hover{
-                        border: solid var(--col-1-) 1px;
-                        background: transparent;
-    
-                        & *{
-                            color: var(--col-1-);
-                        }
-                    }
+
                 }
             }
             & aside{
@@ -1532,9 +1518,6 @@
             & #HomeText1{
                 margin-left: 5vw;
             }
-            *{
-                color: var(--col-1-);
-            }
             & .container{
                 height: auto;
                 width: 90vw;
@@ -1547,18 +1530,6 @@
                 & button{
                     border: none;
                     background: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
-    
-                    & *{
-                        color: var(--col-2-);
-                    }
-                    &:hover{
-                        border: solid var(--col-1-) 1px;
-                        background: transparent;
-    
-                        & *{
-                            color: var(--col-1-);
-                        }
-                    }
                 }
             }
             & aside{
