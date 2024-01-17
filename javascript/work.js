@@ -5,15 +5,15 @@ dropButton.addEventListener('click', (e) => {
     const item = document.querySelector('header');
     const part = document.querySelector('nav');
 
-    if(  part.style.marginTop == '-200vh'){
-        item.style.height = '300px';
-        part.style.marginTop = '5vh';
+    if(  part.style.bottom == '15vh'){
+        item.style.height = '50vh';
+        part.style.bottom = '10vh';
         
     
     }
     else {
-        item.style.height = '70px';
-        part.style.marginTop = '-200vh';
+        item.style.height = '8vh';
+        part.style.bottom = '15vh';
     }
 });
 
