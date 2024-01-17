@@ -1,3 +1,25 @@
+#firstimage{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: -7;
+    opacity: 0;
+    display: none;
+}
+#secondimage{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: -3;
+    opacity: 1;
+    display: block;
+}
 #hero{
     display: flex;
     flex-direction: row;
@@ -288,22 +310,6 @@
             .hp199 { animation-delay: 7920ms; }
             .hp200 { animation-delay: 7960ms; }
         }
-    }
-    #firstimage{
-        position: fixed;
-        top: 0;
-        pointer-events: none;
-        z-index: -7;
-        opacity: 0;
-        display: none;
-    }
-    #secondimage{
-        position: fixed;
-        top: 0;
-        pointer-events: none;
-        z-index: -3;
-        opacity: 1;
-        display: block;
     }
 }
 @keyframes jump{
@@ -925,20 +931,6 @@
                 gap: 4px;
             }
         }
-        #firstimage{
-            position: fixed;
-            top: 0;
-            pointer-events: none;
-            opacity: 0;
-            display: none;
-        }
-        #secondimage{
-            position: fixed;
-            top: 0;
-            pointer-events: none;
-            opacity: 1;
-            display: block;
-        }
     }
     #welcome{
         height: auto;
@@ -1475,6 +1467,22 @@
     } 
 }
 @media (max-width: 768px){
+    #firstimage{
+        position: fixed;
+        top: 0;
+        pointer-events: none;
+        z-index: -3;
+        opacity: 1;
+        display: block;
+    }
+    #secondimage{
+        position: fixed;
+        top: 0;
+        pointer-events: none;
+        z-index: -7;
+        opacity: 0;
+        display: none;
+    }
     #hero{
         display: flex;
         flex-direction: row;
@@ -1545,22 +1553,7 @@
                 gap: 4px;
             }
         }
-        #firstimage{
-            position: fixed;
-            top: 0;
-            pointer-events: none;
-            z-index: -3;
-            opacity: 1;
-            display: block;
-        }
-        #secondimage{
-            position: fixed;
-            top: 0;
-            pointer-events: none;
-            z-index: -7;
-            opacity: 0;
-            display: none;
-        }
+       
     }
     #welcome{
         height: auto;
