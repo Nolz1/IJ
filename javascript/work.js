@@ -5,15 +5,29 @@ dropButton.addEventListener('click', (e) => {
     const item = document.querySelector('header');
     const part = document.querySelector('nav');
 
-    if(  part.style.bottom == '15vh'){
-        item.style.height = '50vh';
-        part.style.bottom = '10vh';
+    if(window.innerWidth > 768){
+        if(  part.style.bottom == '15vh'){
+            item.style.height = '50vh';
+            part.style.bottom = '10vh';
+            
         
-    
+        }
+        else {
+            item.style.height = '10vh';
+            part.style.bottom = '15vh';
+        }
     }
-    else {
-        item.style.height = '8vh';
-        part.style.bottom = '15vh';
+    if(window.innerWidth <= 768){
+        if(  part.style.bottom == '15vh'){
+            item.style.height = '50vh';
+            part.style.bottom = '10vh';
+            
+        
+        }
+        else {
+            item.style.height = '15vh';
+            part.style.bottom = '15vh';
+        }
     }
 });
 
