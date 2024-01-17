@@ -49,6 +49,7 @@
             width: 80%;
             border: none;
             border-bottom: solid var(--col-2-) 2px;
+            border-radius: 0;
             outline: none;
             padding: 0 20px;
             background-color: var(--col-1-);
@@ -70,6 +71,7 @@
             outline: none;
             padding: 20px;
             background-color: var(--col-1-);
+            border-radius: 0;
 
             font-size: var(--sz-7-);
             font-family: var(--font-2-);
@@ -128,9 +130,8 @@
     }
 }
 
-@media (max-width: 1024px){
-   
-#mail{
+@media (max-width: 1024px){  
+    #mail{
     height: auto;
     padding: 20vh 0 10vh 0;
     display: flex;
@@ -237,7 +238,117 @@
             }
         }
     }
-} 
+    } 
 }
-@media (max-width: 768px){}
+@media (max-width: 768px){
+    #mail{
+        height: auto;
+        padding: 20vh 0 10vh 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5vw;
+    
+        & article{
+            flex: none;
+            height: 60vh;
+            width: 20vw;
+            display: grid;
+            place-items: center;
+            overflow: hidden;
+            border-radius: 20px;
+            filter: blur(1px);
+            display: none;
+    
+            & p{
+                height: 120%;
+                width: 250%;
+                rotate: 45deg;
+                text-align: center;
+                font-weight: 500;
+                font-size: 20px;
+                    background: linear-gradient(90deg, red 0%, blue 100%);
+                    color: transparent;
+                    background-clip: text;
+                    pointer-events: none;
+            }
+        }
+        & form{
+            flex: none;
+            position: relative;
+            height: auto;
+            width: 80vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 3vh;
+    
+            & input{
+                height: 60px;
+                width: 90%;
+                border: none;
+                border-bottom: solid var(--col-2-) 2px;
+                outline: none;
+                padding: 0 20px;
+                background-color: var(--col-1-);
+    
+                font-size: var(--sz-7-);
+                font-family: var(--font-2-);
+                line-height: 160%;
+                font-weight: 500;
+                color: var(--col-3-); 
+            }
+            
+            & textarea{
+                height: 320px;
+                max-height: 60vh;
+                width: 90%;
+                min-width: 90%;
+                max-width: 90%;
+                border: solid var(--col-2-) 1px;
+                outline: none;
+                padding: 20px;
+                background-color: var(--col-1-);
+    
+                font-size: var(--sz-7-);
+                font-family: var(--font-2-);
+                line-height: 160%;
+                font-weight: 500;
+                color: var(--col-3-);
+            }
+            & div{
+                position: relative;
+                height: auto;
+                width: 90%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 15px;
+    
+                & input{
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 10px;
+                    
+                }
+                & label{
+                    font-size: 16px;
+                    font-family: var(--font-2-);
+                    line-height: 160%;
+                    font-weight: 300;
+                    color: var(--col-3-);
+                }
+            }
+            & button{
+                width: 100%;
+                &:hover i{
+                    rotate: -45deg;
+                }
+            }
+        }
+        } 
+}
 @media (max-width: 480px){}
